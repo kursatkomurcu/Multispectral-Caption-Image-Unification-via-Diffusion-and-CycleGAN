@@ -51,8 +51,8 @@ It allows **triplet data creation** even when only partial information (e.g., ju
 ---
 
 ## Example of Results
-![Demo Image](https://huggingface.co/kursatkomurcu/Multispectral-Caption-Image-Unification-via-Diffusion-and-CycleGAN/resolve/main/caption_rgb_multispec.png)
-![Band Examples](https://huggingface.co/kursatkomurcu/Multispectral-Caption-Image-Unification-via-Diffusion-and-CycleGAN/resolve/main/band_examples.png)
+![Demo Image](https://github.com/kursatkomurcu/Multispectral-Caption-Image-Unification-via-Diffusion-and-CycleGAN/blob/main/images/caption_rgb_multispec.png)
+![Band Examples](https://github.com/kursatkomurcu/Multispectral-Caption-Image-Unification-via-Diffusion-and-CycleGAN/blob/main/images/band_examples.png)
 
 
 ## 📚 Training Details
