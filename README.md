@@ -48,6 +48,45 @@ It allows **triplet data creation** even when only partial information (e.g., ju
 - Specialized **SAM Loss** (Spectral Angle Mapper) for better multispectral consistency
 - Supports creating fully unified datasets from previously disconnected modalities
 
+```bash
+python sd_train.py \
+  --data_root /path/to/your/data_for_diffusion \
+  --save_root /path/to/your/output_dir \
+  --batch_size 4 \
+  --learning_rate 1e-5 \
+  --num_epochs 3 \
+  --checkpoint_interval 20000 \
+  --model_id stabilityai/stable-diffusion-2-1-base
+```
+
+```bash
+python sd_generate.py \
+  --checkpoint_dir /your/sd/checkpoint-step \
+  --csv_path /your/updated_annotations.csv \
+  --output_dir /your/save/folder/for/generated_images
+```
+
+```bash
+python cycle_gan_train.py \
+  --base_dir "/your/base/dir" \
+  --band_folder "/your/band/folder" \
+  --root_A "/your/rgb/folder" \
+  --models_dir "models" \
+  --output_dir "output" \
+  --batch_size 128 \
+  --n_epochs 100 \
+```
+
+```bash
+python cycle_gan_eval.py \
+  --rgb_dir "/your/rgb/path" \
+  --ms_dir "/your/multispectral/path" \
+  --model_path "/your/model/path/G_model.safetensors" \
+  --batch_size 128 \
+  --resize_size 512 \
+  --crop_size 64 \
+```
+
 ---
 
 ## Example of Results
