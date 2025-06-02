@@ -132,27 +132,29 @@ python cycle_gan_eval.py \
 ## ⚡ Quick Example: Generate an Image from a Single Caption
 
 ```python
+import os
 import torch
 from diffusers import StableDiffusionPipeline, UNet2DConditionModel, AutoencoderKL, DPMSolverMultistepScheduler
 from transformers import CLIPTextModel, CLIPTokenizer
 from safetensors.torch import load_file as safe_load
+import matplotlib.pyplot as plt
 from PIL import Image
-import os
 
-# Load fine-tuned UNet weights
-checkpoint_path = "stable_diffusion/model-001.safetensors"
+# Checkpoint fine-tuned UNet
+checkpoint_dir = "/your/path"
+checkpoint_path = os.path.join(checkpoint_dir, "model.safetensors")
 
-# Initialize UNet and load weights
 base_unet = UNet2DConditionModel.from_pretrained(
     "stabilityai/stable-diffusion-2-1-base",
     subfolder="unet",
     torch_dtype=torch.float16
 )
+
+# Fine-tuned weights
 state_dict = safe_load(checkpoint_path)
 base_unet.load_state_dict(state_dict)
 unet = base_unet
 
-# Load VAE, text encoder, tokenizer, scheduler
 vae = AutoencoderKL.from_pretrained(
     "stabilityai/stable-diffusion-2-1-base",
     subfolder="vae",
@@ -172,31 +174,44 @@ scheduler = DPMSolverMultistepScheduler.from_pretrained(
     subfolder="scheduler"
 )
 
-# Build the pipeline
+safety_checker = None
+feature_extractor = None
+
+# Stable Diffusion pipeline
 pipe = StableDiffusionPipeline(
     unet=unet,
     vae=vae,
     text_encoder=text_encoder,
     tokenizer=tokenizer,
     scheduler=scheduler,
-    safety_checker=None,
-    feature_extractor=None
-).to("cuda")
+    safety_checker=safety_checker,
+    feature_extractor=feature_extractor
+)
 
-# Single caption prompt
-prompt = "A coastal city with large harbors and residential areas visible from space"
+pipe = pipe.to("cuda")
 
-# Generate the image
-result = pipe(prompt, num_inference_steps=50)
+prompt = "A coastal city with large harbors and residential areas"
+
+with torch.cuda.amp.autocast():
+    result = pipe(prompt, num_inference_steps=100, guidance_scale=7.5)
+
 image = result.images[0]
 
-# Save the image
-output_dir = "./generated_images"
+output_dir = "/your/save/path"
 os.makedirs(output_dir, exist_ok=True)
-output_path = os.path.join(output_dir, "sample_generated_image.png")
+output_path = os.path.join(output_dir, "single_prompt_generated.png")
 image.save(output_path)
+print(f"✅ The image generated and saved: {output_path}")
 
-print(f"✅ Image generated and saved at {output_path}")
+# 8. Matplotlib ile görselleştir
+if os.path.exists(output_path):
+    img = Image.open(output_path)
+    plt.figure(figsize=(8, 8))
+    plt.imshow(img)
+    plt.axis("off")
+    plt.show()
+else:
+    print(f"The file could not find: {output_path}")
 
 ```
 
