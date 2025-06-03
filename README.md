@@ -2,7 +2,7 @@
 
 ## 🔗 Resources
 
-- 📄 [Full Paper (Preprint)](link_to_paper_if_available)
+- 📄 [Full Paper (Preprint)](link_to_paper_if_available) will be added
 - 🧠 [Weights of Models (Hugging Face)](https://huggingface.co/kursatkomurcu/Multispectral-Caption-Image-Unification-via-Diffusion-and-CycleGAN)
 
 <p align="left">
@@ -22,7 +22,7 @@
 If you use this model, please cite:
 
 ```bibtex
-@misc{will be added
+@article{will be added
 }
 ```
 
