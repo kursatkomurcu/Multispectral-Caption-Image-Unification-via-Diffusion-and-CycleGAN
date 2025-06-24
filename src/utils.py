@@ -83,10 +83,7 @@ def ms_ssim(
 
     return ms_ssim_per_sample.mean()
 
-
-#####################################
-# SAM Loss Tanımı
-#####################################
+# SAM Loss
 class SAMLoss(nn.Module):
     def __init__(self):
         super(SAMLoss, self).__init__()
