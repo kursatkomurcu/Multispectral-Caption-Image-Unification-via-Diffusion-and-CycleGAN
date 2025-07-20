@@ -4,7 +4,9 @@
 
 - 📄 [Full Paper (Preprint)](link_to_paper_if_available) will be added
 - 🧠 [Weights of Models (Hugging Face)](https://huggingface.co/kursatkomurcu/Multispectral-Caption-Image-Unification-via-Diffusion-and-CycleGAN)
-
+- [RGB Data](https://drive.google.com/drive/folders/1J12nXyrLrjzkuwku9Sgx4WfTeYRajjEz?usp=sharing)
+- [Multispectral Data](https://drive.google.com/drive/folders/1mIHOMczZ4nR3GWmzUOt0PiaLpqQfYtUD?usp=sharing)
+  
 <p align="left">
   <a href="https://www.buymeacoffee.com/kursatkomurcu">
     <img
