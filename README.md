@@ -1,5 +1,9 @@
 # Multispectral-Caption-Image-Unification-via-Diffusion-and-CycleGAN
 
+⚠️ **Synthetic products — not radiometric ground truth.**  
+**Weights:** Responsible AI Model License (`LICENSE-MODEL`) • **Data:** CC BY-NC 4.0 + AUP (`LICENSE-DATA`, `AUP.md`) • **Code:** Apache-2.0.  
+No operational/safety-critical use or surveillance. Use implies acceptance of the license(s) and AUP.
+
 ## 🔗 Resources
 
 - 📄 [Full Paper (Preprint)](link_to_paper_if_available) will be added
