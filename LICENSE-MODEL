@@ -1,0 +1,33 @@
+Responsible AI Model License for Multispectral-Caption-Image-Unification Weights
+Version 1.0 — 2025-01-01
+
+Copyright (c) 2025 Kursat Komurcu
+
+Scope. This license covers ONLY the model weights released in this repository.
+Project code and datasets are licensed separately.
+
+Grant. You may use, reproduce, and redistribute the Model and create derivatives for RESEARCH AND
+BENCHMARKING, subject to the Restrictions below. Include this license with any redistribution.
+
+Restrictions (Prohibited Uses).
+- No operational or safety-critical decision making (e.g., compliance, emergency response,
+  credit/insurance/risk scoring).
+- No surveillance, tracking, targeting of persons/property, weaponization, or military/intelligence uses.
+- Do not claim radiometric/physical ground truth: outputs are SYNTHETIC and not a substitute for
+  calibrated Sentinel-2 (or any real) measurements.
+- Do not present synthetic outputs as real satellite data without clear disclosure.
+- Obey all applicable laws (privacy, export, anti-discrimination).
+
+Provenance & Disclosure. Keep file-level provenance (e.g., synthetic=true, pipeline=caption→RGB→MSI,
+pipeline_version, seed). Publications/demos must disclose that outputs are synthetic.
+
+Attribution. Cite the corresponding paper and repository when using the Model or derivatives.
+
+Termination. Any breach of the Restrictions terminates this license automatically.
+
+Disclaimer. THE MODEL AND ANY OUTPUTS ARE PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND.
+LICENSOR SHALL NOT BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY ARISING FROM USE OF THE
+MODEL OR OUTPUTS.
+
+Relation to other licenses. Code: Apache-2.0 (LICENSE). Dataset: CC BY-NC 4.0 + AUP
+(LICENSE-DATA, AUP.md). For the Model and its outputs, this license controls.
