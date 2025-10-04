@@ -1,0 +1,9 @@
+Dataset License for Multispectral-Caption-Image-Unification
+Version 1.0 — 2025-01-01
+
+This dataset is licensed under Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0).
+See https://creativecommons.org/licenses/by-nc/4.0/
+
+Additional terms: Use is further governed by the Acceptable Use Policy (AUP.md).
+All items are SYNTHETIC products; they are not radiometric ground truth and must not be used for operational, surveillance, or safety-critical purposes.
+Provenance metadata (synthetic=true, pipeline_version, seed) must be preserved.
