@@ -12,6 +12,7 @@ No operational/safety-critical use or surveillance. Use implies acceptance of th
 To see the data, the loading time can be long
 - [RGB Data](https://drive.google.com/drive/folders/1J12nXyrLrjzkuwku9Sgx4WfTeYRajjEz?usp=sharing)
 - [Multispectral Data](https://drive.google.com/drive/folders/1mIHOMczZ4nR3GWmzUOt0PiaLpqQfYtUD?usp=sharing)
+- [Captions](https://drive.google.com/file/d/1uyZzvvK_NeAxNDO2b6ji0FhMv1k9qTvr/view?usp=sharing)
   
 <p align="left">
   <a href="https://www.buymeacoffee.com/kursatkomurcu">
