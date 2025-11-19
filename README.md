@@ -31,8 +31,16 @@ To see the data, the loading time can be long
 If you use this model, please cite:
 
 ```bibtex
-@article{will be added
-}
+@ARTICLE{11242103,
+  author={Komurcu, Kursat and Petkevicius, Linas},
+  journal={IEEE Access}, 
+  title={Multispectral Image Caption Unification Using Diffusion and Cycle GAN Models}, 
+  year={2025},
+  volume={13},
+  number={},
+  pages={193708-193718},
+  keywords={Translation;Remote sensing;Diffusion models;Pipelines;Image synthesis;Satellite images;Generative adversarial networks;Training;Text to image;Geospatial analysis;Cycle GAN;data synthesis;image-to-image translation;multispectral imagery;remote sensing;sentinel-2;stable diffusion;text-to-image},
+  doi={10.1109/ACCESS.2025.3632152}}
 ```
 
 ## 📜 Overview
