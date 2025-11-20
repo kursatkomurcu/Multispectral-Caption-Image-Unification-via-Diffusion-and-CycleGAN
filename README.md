@@ -6,7 +6,7 @@ No operational/safety-critical use or surveillance. Use implies acceptance of th
 
 ## 🔗 Resources
 
-- 📄 [Full Paper (Preprint)](link_to_paper_if_available) will be added
+- 📄 [Full Paper](https://ieeexplore.ieee.org/document/11242103) 
 - 🧠 [Weights of Models (Hugging Face)](https://huggingface.co/kursatkomurcu/Multispectral-Caption-Image-Unification-via-Diffusion-and-CycleGAN)
 
 To see the data, the loading time can be long
